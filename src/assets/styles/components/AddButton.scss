@@ -1,0 +1,36 @@
+@import '../variables.scss';
+
+.AddButton {
+    background-color: $main-color;
+    cursor          : pointer;
+    width           : 60px;
+    height          : 60px;
+    border-radius   : 50%;
+    position        : absolute;
+    right           : 15px;
+    bottom          : 80px;
+
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+    transition     : 300ms;
+}
+
+.AddButton:hover {
+    background-color: #00173b;
+}
+
+.AddButton__icon {
+    width      : 50%;
+    height     : 50%;
+    color      : white;
+    line-height: 1;
+    font-size  : 30px;
+}
+
+//Responsivo
+@media only screen and (min-width: 600px) {
+    .AddButton {
+        bottom: 15px;
+    }
+}

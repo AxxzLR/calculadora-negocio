@@ -1,0 +1,42 @@
+{
+    "api": {
+        "User": {
+            "Usuario": {
+                "IDUsuario": 1,
+                "Nombre": "Axel Alexis López Resendiz",
+                "Correo": "alopez@murguia.com",
+                "Perfil": 0,
+                "Estatus": 1,
+                "Key": "84eba92b-8640-4763-8973-f27ad72038e0"
+            },
+            "hasError": false,
+            "message": ""
+        },
+        "Users": {
+            "Usuarios": [
+                {
+                    "IDUsuario": 1,
+                    "Nombre": "Axel Alexis López Resendiz",
+                    "Correo": "alopez@murguia.com",
+                    "Perfil": 0,
+                    "Estatus": 1,
+                    "Key": null
+                },
+                {
+                    "IDUsuario": 2,
+                    "Nombre": "Marco Granada",
+                    "Correo": "mgranada@murguia.com",
+                    "Perfil": 1,
+                    "Estatus": 0,
+                    "Key": null
+                }
+            ],
+            "hasError": false,
+            "message": ""
+        },
+        "Test": {
+            "hasError": false,
+            "message": ""
+        }
+    }
+}

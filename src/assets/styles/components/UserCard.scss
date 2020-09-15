@@ -1,0 +1,65 @@
+@import '../variables.scss';
+
+.User__card {
+    width      : 100%;
+    min-width  : 270px;
+    display    : flex;
+    align-items: center;
+}
+
+.User__card--img {
+    border-radius: 50%;
+    height       : 90px;
+}
+
+.User__info {
+    display        : flex;
+    flex-direction : column;
+    width          : calc(100% - 105px);
+    margin-left    : 15px;
+    min-height     : 90px;
+    justify-content: space-between;
+}
+
+.User__info--name,
+.User__info--email {
+    width        : 100%;
+    color        : $main-color;
+    margin-bottom: 5px;
+    font-size    : 20px;
+    font-weight  : 600;
+}
+
+.User__info--email {
+    font-size  : 15px;
+    font-weight: 200;
+}
+
+.User__details {
+    width: 100%;
+}
+
+.User__details--ok,
+.User__details--error,
+.User__details--perfil {
+    font-size  : 15px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.User__details--perfil {
+    margin-right  : 10px;
+    color         : #85BEDC;
+}
+
+.User__details--ok {
+    color: #268019;
+}
+
+.User__details--error {
+    color: #802319;
+}
+
+//Responsive
+
+@media only screen and (min-width: 600px) {}

@@ -1,0 +1,89 @@
+.input__text--rounded {
+    width           : 100%;
+    padding         : 10px;
+    background-color: rgba($color: white, $alpha: 0.2);
+    font-size       : 20px;
+    line-height     : 1;
+    text-align      : center;
+    border          : none;
+    border-radius   : 30px;
+    color           : white;
+}
+
+.input__text--rounded::placeholder {
+    color: white;
+}
+
+.input__button--rounded,
+.input__button--rounded--main,
+.input__button--rounded--ok,
+.input__button--rounded--cancel,
+.input__button--rounded--ok-half,
+.input__button--rounded--cancel-half {
+    width        : 100%;
+    padding      : 10px;
+    font-size    : 20px;
+    line-height  : 1;
+    text-align   : center;
+    border       : none;
+    border-radius: 30px;
+    color        : white;
+    cursor       : pointer;
+    font-weight  : bold;
+    transition   : 0.3s;
+}
+
+.input__button--rounded--main {
+    background-color: #00173b;
+    margin-bottom   : 20px;
+}
+
+.input__button--rounded--main:hover {
+    background-color: $main-color;
+}
+
+.input__button--rounded--ok,
+.input__button--rounded--ok-half {
+    background-color: #268019;
+}
+
+.input__button--rounded--ok:hover,
+.input__button--rounded--ok-half:hover {
+    background-color: #17580D;
+}
+
+.input__button--rounded--cancel,
+.input__button--rounded--cancel-half {
+    background-color: #802319;
+}
+
+.input__button--rounded--cancel:hover,
+.input__button--rounded--cancel-half:hover {
+    background-color: #61160E;
+}
+
+.input__button--rounded--ok-half,
+.input__button--rounded--cancel-half {
+    width: calc(50% - 5px);
+}
+
+.input__text--bottom-border,
+.input__ddl--bottom-border {
+    width        : 100%;
+    border       : none;
+    text-align   : center;
+    color        : $main-color;
+    border-bottom: 2px solid $main-color;
+    padding      : 5px;
+    font-size    : 20px;
+    line-height  : 1;
+}
+
+.input__text--bottom-border::placeholder {
+    color: $main-color;
+}
+
+.input__ddl--bottom-border,
+.input__ddl--bottom-border>option {
+    text-transform: capitalize;
+}

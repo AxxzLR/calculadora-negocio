@@ -1,0 +1,120 @@
+@import '../variables.scss';
+
+.Header__container {
+    height          : 70px;
+    width           : 100%;
+    background-color: $main-color;
+    color           : white;
+    padding         : 10px;
+
+    display        : flex;
+    justify-content: space-between;
+    align-items    : center;
+    transition     : 300ms;
+}
+
+
+.Header__menu,
+.Header__menu--user {
+    height         : 100%;
+    display        : flex;
+    align-items    : center;
+    justify-content: space-between;
+    width          : 100%;
+}
+
+.Header__menu--user {
+    justify-content: center;
+}
+
+.Header__menu--logo {
+    height     : 100%;
+    margin-left: 10px;
+    cursor     : pointer;
+}
+
+.Header__info {
+    position        : absolute;
+    background-color: $main-color;
+    bottom          : 0;
+    left            : 0;
+    display         : flex;
+    justify-content : space-between;
+    align-items     : center;
+
+    width  : 100%;
+    padding: 10px 15px;
+    height : 65px;
+}
+
+.Header__p--name {
+    font-weight: bold;
+}
+
+.Header__p--email {
+    font-weight: 200;
+}
+
+.Header__info--logout {
+    height     : 40px;
+    margin-left: 15px;
+    cursor     : pointer;
+}
+
+.Header__menu-items {
+    display         : flex;
+    flex-direction  : column;
+    justify-content : center;
+    align-items     : center;
+    background-color: rgba($color: $overaly, $alpha: 0.6);
+    height          : calc(100% - 135px);
+    position        : absolute;
+
+    width     : 0;
+    transition: 0.5s;
+    overflow-x: hidden;
+    z-index   : 999;
+}
+
+.Header__menu-items--showed {
+    width: 100%;
+}
+
+.Header__menu-items span {
+    margin        : 0 10px;
+    display       : flex;
+    align-items   : center;
+    font-size     : 18px;
+    font-weight   : 200;
+    color         : white;
+    font-size     : 35px;
+    font-weight   : 500;
+    text-transform: uppercase;
+    cursor        : pointer;
+    padding       : 7px 0;
+    transition    : 300ms;
+}
+
+.Header__menu-items span:hover {
+    color      : $main-color;
+    font-weight: 700;
+}
+
+//Responsivo
+@media only screen and (min-width: 600px) {
+    .Header__info {
+        position  : initial;
+        width     : auto;
+        text-align: right;
+        padding   : 0;
+    }
+
+    .Header__menu,
+    .Header__menu--user {
+        width: auto;
+    }
+
+    .Header__menu-items {
+        height: calc(100% - 70px);
+    }
+}
